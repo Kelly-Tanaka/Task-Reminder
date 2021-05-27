@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
@@ -45,15 +46,17 @@ const appRoutes: Routes = [
     MatDatepickerModule,
     MatNativeDateModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    NgxMaterialTimepickerModule
 
   ],
-  providers: [
+  providers:[
     MatDatepickerModule,
     MatNativeDateModule,
     MatButtonModule,
-    MatToolbarModule
-  ],
+    MatToolbarModule,
+    NgxMaterialTimepickerModule
+],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

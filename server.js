@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const jsonServer = require('json-server');
 
-const app = express(); // espress is a framework for bulding servers
+const app = express(); // espress is a framework for bulding servers 
 
 // ...
 
@@ -16,7 +16,7 @@ app.use('/api', jsonServer.router('db.json'));
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/angular-crash'));
 
-app.get('/*', function(req,res) {
+app.get('/', function(req,res) {
     
 res.sendFile(path.join(__dirname+'/dist/angular-crash/index.html'));
 });

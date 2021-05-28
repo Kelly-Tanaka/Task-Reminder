@@ -1,19 +1,19 @@
 <header>
   <p>
     <mat-toolbar
-    color="primary"
+    
     id="id"
     >
-      <span>{{title}}</span>
+      <span style="margin-right: 20px;">{{title}}</span>
+
+      <mat-icon aria-hidden="false" aria-label="Example home icon">
+        notifications_active
+      </mat-icon>
+      
       
     </mat-toolbar>
   </p>
   
 
-  <app-button
-    *ngIf="hasRoute('/')"
-    color="{{ showAddTask ? 'red' : 'green' }}"
-    text="{{ showAddTask ? 'Close' : 'Add' }}"
-    (btnClick)="toggleAddTask()"
-  ></app-button>
+
 </header>

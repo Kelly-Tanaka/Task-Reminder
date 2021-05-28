@@ -3,7 +3,11 @@
   class="task"
   (dblclick)="onToggle(task)"
 >
+
+
   <h3>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">check_circle</mat-icon>
+    
     {{ task.text }}
     <fa-icon
       (click)="onDelete(task)"

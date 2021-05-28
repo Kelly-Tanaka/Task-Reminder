@@ -18,6 +18,8 @@ import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+
 
 const appRoutes: Routes = [
   { path: '', component: TasksComponent },
@@ -47,7 +49,8 @@ const appRoutes: Routes = [
     MatNativeDateModule,
     MatButtonModule,
     MatToolbarModule,
-    NgxMaterialTimepickerModule
+    NgxMaterialTimepickerModule,
+    MatIconModule
 
   ],
   providers:[
@@ -55,7 +58,8 @@ const appRoutes: Routes = [
     MatNativeDateModule,
     MatButtonModule,
     MatToolbarModule,
-    NgxMaterialTimepickerModule
+    NgxMaterialTimepickerModule,
+    MatIconModule
 ],
   bootstrap: [AppComponent],
 })

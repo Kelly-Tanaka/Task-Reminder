@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class TaskService {
-  private apiUrl = 'https://task-reminder2021.herokuapp.com/api/tasks';
+  private apiUrl = 'http://localhost:5000/tasks';
 
   constructor(private http: HttpClient) {}
 

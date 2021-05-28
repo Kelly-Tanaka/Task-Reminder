@@ -1,0 +1,19 @@
+
+ <!-- <app-button
+    *ngIf="hasRoute('/')"
+    color="{{ showAddTask ? 'red' : 'green' }}"
+    text="{{ showAddTask ? 'Close' : 'Add' }}"
+    (btnClick)="toggleAddTask()"
+  ></app-button>-->
+
+<button
+  class="btn"
+mat-button 
+  (click)="toggleAddTask()"
+
+>
+<mat-icon aria-hidden="false" aria-label="Example home icon">
+    {{ !showAddTask ? 'add_circle_outline' : 'clear' }}
+</mat-icon>
+{{ !showAddTask ? 'Add' : 'Close' }}
+</button>
